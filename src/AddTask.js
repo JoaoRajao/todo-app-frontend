@@ -16,9 +16,9 @@ function AddTask({ onAddTask }) {
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder="Add a new task"
+        placeholder="Adiciona nova tarefa"
       />
-      <button type="submit">Add</button>
+      <button type="submit">Adicionar</button>
     </form>
   );
 }

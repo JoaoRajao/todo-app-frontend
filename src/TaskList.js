@@ -10,9 +10,9 @@ function TaskList({ tasks, onDelete, onEdit, onToggleCompleted }) {
             checked={task.completed}
             onChange={() => onToggleCompleted(task)}
           />
-          {task.title} - {task.completed ? 'Completed' : 'Pending'}
-          <button onClick={() => onEdit(task)}>Edit</button>
-          <button onClick={() => onDelete(task.id)}>Delete</button>
+          {task.title} - {task.completed ? 'Completa' : 'Pendente'}
+          <button onClick={() => onEdit(task)}>Editar</button>
+          <button onClick={() => onDelete(task.id)}>Deletar</button>
         </li>
       ))}
     </ul>

@@ -17,7 +17,7 @@ function EditTaskModal({ isOpen, onRequestClose, task, onTaskUpdate }) {
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
-      contentLabel="Edit Task"
+      contentLabel="Editar Tarefa"
     >
       <form onSubmit={handleSubmit}>
         <input
@@ -30,8 +30,8 @@ function EditTaskModal({ isOpen, onRequestClose, task, onTaskUpdate }) {
           checked={completed}
           onChange={(e) => setCompleted(e.target.checked)}
         />
-        <button type="submit">Update Task</button>
-        <button onClick={onRequestClose}>Cancel</button>
+        <button type="submit">Modificar Tarefa</button>
+        <button onClick={onRequestClose}>Cancelar</button>
       </form>
     </Modal>
   );

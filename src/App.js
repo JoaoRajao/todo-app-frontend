@@ -29,7 +29,7 @@ function App() {
       await axios.post('http://localhost:3000/tasks', task);
       setTimeout(fetchTasks, 1000);
     } catch (error) {
-      console.error('Failed to add task', error);
+      console.error('erro ao adicionar', error);
     }
   };
 
@@ -38,7 +38,7 @@ function App() {
       await axios.delete(`http://localhost:3000/tasks/${id}`);
       setTimeout(() => setTasks(tasks.filter(task => task.id !== id)), 1000);
     } catch (error) {
-      console.error('Failed to delete task', error);
+      console.error('erro ao deletar', error);
     }
   };
 
@@ -66,7 +66,7 @@ function App() {
       await axios.put(`http://localhost:3000/tasks/${updatedTask.id}`, updatedTask);
       setTimeout(fetchTasks, 1000);
     } catch (error) {
-      console.error('Failed to update task', error);
+      console.error('erro ao fazer update', error);
     }
   };
 
