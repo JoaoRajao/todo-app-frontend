@@ -36,3 +36,97 @@
     transform: rotate(360deg);
   }
 }
+.modal {
+  position: absolute;
+  top: 40px;
+  left: 20%;
+  right: 20%;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+/* src/App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Fonte mais limpa e moderna */
+  background-color: #f0f0f5; /* Um fundo neutro para começar, troque pela cor que desejar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 90%;
+  max-width: 600px;
+  background-color: #ffffff; /* Fundo claro para os elementos do App */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para dar um efeito elevado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9; /* Cor de fundo para cada tarefa */
+  border: 1px solid #ddd; /* Borda sutil para as tarefas */
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 10px; /* Bordas arredondadas para as tarefas */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 70%;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #0056b3; /* Cor azul para o botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004494;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
